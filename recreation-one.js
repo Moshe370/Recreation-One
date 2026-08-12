@@ -7,21 +7,13 @@ console.table([
 ])
 
 console.group("## HIPOTESYS n° 1")
-// SET OF LOOPS TO VERIFY AND CALCULATE OF OF THE NUMBERS IN THE SPECIFIED RANGE
+// ARRAYS CAN RECEIVE OTHER ARRAY AS VALUE IN A SPECIFIC POSITION
 
-m_H1 = 20
-n_H1 = 40
-values_H1 = []
-results_H1 = []
+array1 = new Array(2)
+array2 = [1, 2]
 
-for(var i_H1 = m_H1, x = 0; i <= n_H1, x < n_H1-m_H1; i++, x++) {
+array1[0] = array2
 
-  Array.from({length: i_H1}, (_, i) => {
-    if(i_H1 % i == 0) {
-      // arrange the calculus
-    }
-  })
-
-}
+console.log(array1) // yes it can!
 
 console.groupEnd()
