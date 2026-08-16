@@ -35,12 +35,14 @@ for(var e_h2 = m_h2; e_h2 <= n_h2; e_h2++) {
     }
   }
   
-  console.log(values_h2) // there are reapeating values that are making the the sum result in a wrong value for the problem
+  console.log(values_h2)
 
   pair_h2[0] = e_h2
-  pair_h2[1] = values_h2.reduce((acc_h2, cur_h2) => acc_h2 + cur_h2, 0)
+  pair_h2[1] = values_h2.reduce((acc_h2, cur_h2) => acc_h2 + cur_h2, 0) // create filter to only accept perfect squares as a valid pair.
 
   console.log(pair_h2)
+
+  values_h2.length = 0 // clearing the array, because previously it was accumulating values each turn of the for(e_h2) loop. Resulting in wrong results.
 
 } // loop to verify each number between m and n
 
